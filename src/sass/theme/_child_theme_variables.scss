@@ -1,0 +1,992 @@
+// Use this file to overwrite the basic Bootstrap variables and add your own variables
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
+// Just copy a variable from src/sass/assets/bootstrap5/_variables.scss, paste it here and edit the value.
+
+
+$purple: #5533ff; // Thats a sample how you could change a BootStrap variable.
+//$primary: $purple;  // Once we've changed the value, we'll also make it the primary brand color.
+
+
+
+$primary: #a6191a;
+
+
+ul.socialiconz {
+	margin-left:0px!important;
+	margin-right:0px!important;
+	padding-left:0px!important;
+	margin-top:0px!important;
+	margin-bottom:0px!important;
+	float: none;
+	display: inline-block;
+}
+ul.socialiconz li { 
+	display: inline!important;
+	float:right!important;
+	height:25px!important;
+	padding-left:30px;
+} 
+ul.socialiconz >li:last-child {
+	padding-left:0px!important;
+}
+ul.socialiconz li a svg { 
+	color:a6191a;
+	width:25px!important;
+	height:25px!important;
+} 
+.navbar-brand {
+	margin-right: 0rem!important;
+}
+
+/*
+ * Centers dropdown menu items.
+ */
+.menu-item {
+	text-align:center!important;
+}
+
+/**
+ * Hides duplicate names
+ * created by co-authors.
+ */
+.entry-footer {
+	visibility:collapse;
+	font-size:0rem;
+}
+.entry-footer > aside {
+	visibility:visible!important;
+	font-size:1rem;
+}
+.entry-footer > span  {
+	visibility:visible!important;
+	font-size:1rem;
+}
+
+/*
+ * forces word break
+ * on excerpts
+ */
+.entry-content > div >div>p{
+	word-break:break-word!important;
+}
+
+/**
+ * Styles the featured images
+ * shown in page/post archives.
+ */
+.attachment-thumbnail {
+	height: 150px!important;
+	margin-right:5px;
+}
+
+/**
+ * headlines with line.
+ */
+h1.line:before,
+h1.line:after,
+h2.line:before,
+h2.line:after,
+h3.line:before,
+h3.line:after,
+h4.line:before,
+h4.line:after,
+h1.entry-title:before,
+h1.entry-title:after,
+h2.entry-title:before,
+h2.entry-title:after
+{
+	background-color: #454545;
+	content: "";
+	display: inline-block;
+	height: 1px;
+	position: relative;
+	vertical-align: middle;
+	width: 50%;
+}
+
+h1.line:before,
+h2.line:before,
+h3.line:before,
+h4.line:before,
+h1.entry-title:before,
+h2.entry-title:before
+{
+	right: 0.5em;
+	margin-left: -50%;
+}
+
+h1.line:after,
+h2.line:after,
+h3.line:after,
+h4.line:after,
+h1.entry-title:after,
+h2.entry-title:after
+{
+	left: 0.5em;
+	margin-right: -50%;
+}
+
+h1.line,
+h2.line,
+h3.line,
+h4.line,
+h1.entry-title,
+h2.entry-title
+{
+	overflow: hidden;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+	line-height: 1.25em;
+}
+
+/**
+ * Author styling
+ */
+img.avatar {
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+	float: left;
+	margin-right: 5px;
+}
+
+/**
+ * Quick Video Fix
+ */
+figure.wp-block-embed-youtube > .wp-block-embed__wrapper {
+	position: relative;
+  width: 100%!important;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+figure.wp-block-embed-youtube > .wp-block-embed__wrapper iframe {
+	position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%!important;
+  height: 100%!important;
+}
+
+/**
+ * Makes lists less indented.
+ */
+.entry-content ul {
+	padding-left: 20px;
+}
+
+/**
+ * Makes Toggle Button
+ * Full Width.
+ */
+.navbar-toggler {
+	width: 100%;
+}
+
+/**
+ * MAKES WORK BREAK THE DEFAULT
+ * IN ORDER TO PREVENT SPILLING
+ * OVER!
+ */
+p{
+	word-break:break-word;
+}
+
+/**
+ * Quick and dirty centering 
+ * of featured image.
+ */
+article> img.wp-post-image {
+	min-width: 100%;
+}
+
+/**
+ * Prevents container of primary
+ * menu ruining mobile
+ * landscape layout.
+ */
+#wrapper-navbar > nav > div.container {
+	//max-width: 100%!important;
+}
+
+/**
+ * Forces sub-sub menu's
+ * to display when sub menu
+ * is displayed!
+ */
+ul.dropdown-menu li > ul.dropdown-menu{
+	display: inline-grid;
+	width:100%!important;
+}
+ul.dropdown-menu li>ul {
+	position: static!important;
+}
+
+/**
+ * Menu colours.
+ */
+.dropdown-menu {
+	background-color:  white!important;
+	padding-bottom:0!important;
+	padding-top:0!important;
+}
+.dropdown-menu a.dropdown-item {
+	color: black!important;
+}
+.dropdown-menu a.dropdown-item:hover {
+	color: grey!important;
+}
+.navbar-dark .navbar-nav .dropdown-menu a:hover {
+	color: grey!important;
+}
+.navbar-dark .navbar-nav .dropdown-menu:hover a.dropdown-item:hover {
+    background-color: lightgray!important;
+color: black!important;
+}
+.navbar-dark .navbar-nav .dropdown-menu .nav-link {
+	color: black!important;
+}
+.navbar-dark .navbar-nav .dropdown-menu .nav-link:hover {
+	 background-color: lightgray!important;
+color: black!important;
+}
+.dropdown-menu a:focus {
+	background-color:gray;
+}
+.navbar-dark .navbar-nav .dropdown-menu a:focus {
+	background-color:gray;
+}
+.navbar-dark .navbar-nav .dropdown-menu .nav-link:focus {
+	background-color:gray;
+}
+.menu-item a:focus {
+	background-color:gray;
+}
+#wrapper-navbar > nav.navbar-dark ul.navbar-nav a.nav-link {
+	color:black;
+}
+#wrapper-navbar > nav.navbar-dark ul.navbar-nav a.nav-link:hover {
+	color:black;
+	background-color:lightgray;
+}
+.navbar-dark .navbar-nav .active {
+	background-color:lightgray;
+}
+.navbar-dark .navbar-nav .active .nav-link {
+	color:black;
+}
+
+/**
+ * Toggler colour.
+ */
+.navbar-toggler {
+	background-color:grey!important;
+}
+
+/**
+ * Brand colours.
+ */
+ #wrapper-navbar > nav.navbar-dark a.navbar-brand {
+    color: black;
+}
+#wrapper-navbar > nav.navbar-dark a.navbar-brand:hover {
+    color: gray;
+}
+#wrapper-navbar > nav.navbar-dark a.navbar-brand:focus {
+    color: gray;
+}
+/**
+ * Ensures size of button 
+ * in google search embed.
+ */
+button.gsc-search-button {
+	width:70px!important;
+	background-color:#242525!important;
+}
+
+/**
+ * Google search results styling
+ */
+div.gsc-results-wrapper-overlay {
+	background-color:#242525!important;
+}
+.gsc-result-info {
+	color:#CCCCCC!important;
+}
+.gsc-orderby-label {
+	color:#CCCCCC!important;
+}
+.gsc-option-menu-container div {
+	background-color:#242525!important;
+	color:#CCCCCC!important;
+}
+.gsc-option-menu-container {
+	background-color:#242525!important;
+	color:#CCCCCC!important;
+}
+.gsc-cursor div {
+	background-color:#242525!important;
+	color:#CCCCCC!important;
+}
+.gsc-control-cse {
+	background-color:#242525!important;
+}
+.gsc-input {
+    padding-right: 12px!important;
+	color:#CCCCCC!important;
+	background-color:#242525!important;
+}
+.gs-snippet {
+	color:#CCCCCC!important;
+	background-color:#242525!important;
+}
+.gsc-tabHeader {
+	background-color:#242525!important;
+}
+
+/**
+ * Header Background
+ * Colour.
+ */
+ #wrapper-navbar > nav.bg-primary {
+	background-color: white!important;
+}
+/**
+ * Link colours.
+ */
+a:-webkit-any-link {
+	color:#a6191a;
+}
+
+a:-webkit-any-link:hover {
+	color:darkgray;
+}
+
+/**
+ * Forces pagination
+ * to be centered.
+ */
+.pagination {
+	justify-content: center;
+}
+/**
+ * Pagination style
+ * custamisation.
+ */
+.page-link{
+	background-color: white;
+	border-color: lightgray;
+	font-weight:bold;
+}
+.page-link:hover{
+	background-color:lightgray;
+	border-color:lightgray;
+	color:black!important;
+}
+
+.page-item.active .current{
+	background-color:lightgray;
+	border-color:lightgray;
+	color:black!important;
+}
+
+.page-item .dots{
+	background-color: white;
+	border-color: lightgray;
+	color:#a6191a!important;
+}
+.page-item .dots:hover{
+	background-color:lightgray;
+	border-color:lightgray;
+	color:black!important;
+}
+
+
+/**
+ * Removes space before
+ * galleries caused by
+ * adding padding
+ * to lists earlier.
+ */
+.blocks-gallery-grid {
+	padding-left: 0px!important;
+}
+
+
+
+
+
+
+
+
+/**
+ * Verse quick fix?
+ */
+pre {
+    padding: 10px;
+    background: #f5f5f5;
+    font: 12px / 18px Consolas, monospace, serif;
+    color: #444;
+    -moz-tab-size: 4;
+    tab-size: 4;
+    overflow: auto;
+}
+
+/**
+ * Itallic/caption styling.
+ */
+em {
+	color: #D05;
+	font-style: italic;
+}
+
+/**
+ * Quote Styling.
+ */
+blockquote {
+    padding-left: 15px;
+    border-left: 5px solid #EDEDED;
+    font-size: 16px;
+    line-height: 22px;
+    font-style: italic;
+}
+
+/**
+ * Styles the last word
+ * in the title.
+ */
+.title2 {
+	color:#a6191a;
+}
+
+
+
+
+
+
+/**
+ * Devices with screens
+ * below 768px
+ */
+@media only screen and (max-width: 768px) {
+	
+	/**
+	 * Remove lines
+	 */
+	h1.line:before,
+	h1.line:after,
+	h2.line:before,
+	h2.line:after,
+	h3.line:before,
+	h3.line:after,
+	h4.line:before,
+	h4.line:after,
+	h1.entry-title:before,
+	h1.entry-title:after,
+	h2.entry-title:before,
+	h2.entry-title:after
+	{
+		content: none;
+	}
+	
+}
+
+
+
+
+/**
+ * Styles Polly Toggle.
+ */
+.polly
+{
+	text-align:center;
+}
+
+
+/**
+ * Styles Audio Player.
+ */
+audio {
+    filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(82%)!important;
+    width: 50%!important;
+    height: 25px;
+	margin-left:25%;
+	margin-right:25%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * Quick and dirty centering 
+ * of featured image in
+ * container.
+ */
+article>div> img.wp-post-image {
+	min-width: 100%;
+}
+
+/**
+ * Styles the contents of
+ * the custom html
+ * used to overlay
+ * text onto images.
+ */
+#innerdiv1 {
+	width: 100%;
+	top: 0%;
+}
+.feature-logo {
+	margin-left:5%!important; 
+	width: 20%;
+	height: 20%;
+}
+#innerdiv2 {
+	bottom:0%;
+	margin-left:5%!important;
+}
+#innerdiv2  h1 {
+	font-size: 2.5em;
+}
+
+/**
+ * Styles the entry title
+ * header on the feature
+ * page template.
+ */
+body.page-template-featurepage h1.entry-title {
+	background-color:black!important;
+	border-radius: 15px 15px 0px 0px;
+	padding-left:10px;
+	padding-right:10px;
+	text-transform:unset;
+	margin-top:0px!important;
+	margin-bottom:0px!important;
+}
+
+/**
+ * Reduces the size of the 
+ * header on devices with
+ * certain sized screens.
+ */
+@media only screen and (max-width: 1199px) {
+	#innerdiv2  h1 {
+		font-size: 1.5em;
+	}
+}
+@media only screen and (max-width: 385px) {
+	#innerdiv2  h1 {
+		font-size: 0.9em;
+	}
+}
+
+
+
+body.page-template-featurepage h1.entry-title:after {
+	content: none;
+}
+
+body.page-template-featurepage h1.entry-title:before {
+	content: none;
+}
+
+
+
+
+
+
+/**
+ * Limit Max Width.
+ */
+
+
+
+
+
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+// scss-docs-start grid-breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+) !default;
+// scss-docs-end grid-breakpoints
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+// scss-docs-start container-max-widths
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1140px
+) !default;
+// scss-docs-end container-max-widths
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//   TEXT STUFF FROM BOOTSTRAP 5!
+
+
+// Prefix for :root CSS variables
+
+$variable-prefix:             bs- !default;
+
+// scss-docs-start spacer-variables-maps
+$spacer: 1rem !default;
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// scss-docs-start font-variables
+// stylelint-disable value-keyword-case
+
+/**
+ * Font style "Open Sans"
+ * applied.
+ */
+$font-family-sans-serif:      "Open Sans", sans-serif !default;
+
+
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+// stylelint-enable value-keyword-case
+$font-family-base:            var(--#{$variable-prefix}font-sans-serif) !default;
+$font-family-code:            var(--#{$variable-prefix}font-monospace) !default;
+
+// $font-size-root affects the value of `rem`, which is used for as well font sizes, paddings, and margins
+// $font-size-base affects the font size of the body text
+$font-size-root:              null !default;
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-sm:                $font-size-base * .875 !default;
+$font-size-lg:                $font-size-base * 1.25 !default;
+
+$font-weight-lighter:         lighter !default;
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-bold:            700 !default;
+$font-weight-bolder:          bolder !default;
+
+$font-weight-base:            $font-weight-normal !default;
+
+$line-height-base:            1.5 !default;
+$line-height-sm:              1.25 !default;
+$line-height-lg:              2 !default;
+
+$h1-font-size:                $font-size-base * 2.5 !default;
+$h2-font-size:                $font-size-base * 2 !default;
+$h3-font-size:                $font-size-base * 1.75 !default;
+$h4-font-size:                $font-size-base * 1.5 !default;
+$h5-font-size:                $font-size-base * 1.25 !default;
+$h6-font-size:                $font-size-base !default;
+// scss-docs-end font-variables
+
+
+// scss-docs-start headings-variables
+$headings-margin-bottom:      $spacer * .5 !default;
+$headings-font-family:        null !default;
+$headings-font-style:         null !default;
+$headings-font-weight:        500 !default;
+$headings-line-height:        1.2 !default;
+$headings-color:              null !default;
+// scss-docs-end headings-variables
+
+
+
+
+
+// Links
+//
+// Style anchor elements.
+
+$link-color:                              $primary !default;
+$link-decoration:                         none !default;
+$link-shade-percentage:                   20% !default;
+$link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
+$link-hover-decoration:                   underline !default;
+
+
+
+
+
+.row>* {
+//width:unset!important;
+}
+
+.row.nav-links.justify-content-between>* {
+    width: unset!important;
+}
+
+.row>.thing {
+	width:unset!important;
+}
+
+
+
+
+// Color system
+
+// scss-docs-start gray-color-variables
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+// scss-docs-end gray-color-variables
+
+// fusv-disable
+// scss-docs-start gray-colors-map
+$grays: (
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900
+) !default;
+// scss-docs-end gray-colors-map
+// fusv-enable
+
+// scss-docs-start color-variables
+$blue:    #0d6efd !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #d63384 !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #198754 !default;
+$teal:    #20c997 !default;
+$cyan:    #0dcaf0 !default;
+// scss-docs-end color-variables
+
+// scss-docs-start colors-map
+$colors: (
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "white":      $white,
+  "gray":       $gray-600,
+  "gray-dark":  $gray-800
+) !default;
+// scss-docs-end colors-map
+
+
+
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+
+
+// scss-docs-start border-variables
+$border-width:                1px !default;
+$border-widths: (
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  5: 5px
+) !default;
+
+$border-color:                $gray-300 !default;
+// scss-docs-end border-variables
+
+// scss-docs-start border-radius-variables
+$border-radius:               .25rem !default;
+$border-radius-sm:            .2rem !default;
+$border-radius-lg:            .3rem !default;
+$border-radius-pill:          50rem !default;
+// scss-docs-end border-radius-variables
+
+// scss-docs-start box-shadow-variables
+$box-shadow:                  0 .5rem 1rem rgba($black, .15) !default;
+$box-shadow-sm:               0 .125rem .25rem rgba($black, .075) !default;
+$box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
+$box-shadow-inset:            inset 0 1px 2px rgba($black, .075) !default;
+// scss-docs-end box-shadow-variables
+
+
+
+
+// Pagination
+
+// scss-docs-start pagination-variables
+
+$pagination-padding-y:              .375rem !default;
+$pagination-padding-x:              .75rem !default;
+$pagination-padding-y-sm:           .25rem !default;
+$pagination-padding-x-sm:           .5rem !default;
+$pagination-padding-y-lg:           .75rem !default;
+$pagination-padding-x-lg:           1.5rem !default;
+
+$pagination-color:                  $link-color !default;
+$pagination-bg:                     $white !default;
+$pagination-border-width:           $border-width !default;
+$pagination-border-radius:          $border-radius !default;
+$pagination-margin-start:           -$pagination-border-width !default;
+$pagination-border-color:           $gray-300 !default;
+
+$pagination-focus-color:            $link-hover-color !default;
+$pagination-focus-bg:               $gray-200 !default;
+
+
+
+$pagination-focus-box-shadow:       none;
+
+
+
+$pagination-focus-outline:          0 !default;
+
+$pagination-hover-color:            $link-hover-color !default;
+$pagination-hover-bg:               $gray-200 !default;
+$pagination-hover-border-color:     $gray-300 !default;
+
+$pagination-active-color:           #000;
+$pagination-active-bg:              #d3d3d3;
+$pagination-active-border-color:    #d3d3d3;
+
+
+
+
+
+
+
+
+
+
+/**
+ * Forces sub-sub menu's
+ * to display when sub menu
+ * is displayed!
+ */
+ul.dropdown-menu li > ul.dropdown-menu{
+    display: inline-grid;
+}
+ul.dropdown-menu li>ul {
+    position: static!important;
+}
+
+
+
+
+
+
+.navigation {
+	padding-right: unset!important;
+	padding-left: unset!important;
+}
+
+.alignwide {
+	margin: unset!important;
+	width:unset!important;
+	max-width:unset!important;
+}
+
+
+
+
+/**
+ * Box Shadow, Border and Checkbox Colours.
+ */
+.form-control:focus {
+  box-shadow:0 0 3px 5px lightgray!important;
+  border-color: lightgray!important;
+}
+.form-submit>*:focus {
+  box-shadow:0 0 3px 5px lightgray!important;
+}
+.form-check-input:focus {
+  background-color: lightgray!important;
+  box-shadow:0 0 3px 5px lightgray!important;
+  border-color: lightgray!important;
+}
+.form-check-input {
+  background-color: white!important;
+  border-color: lightgray!important;
+}
+.form-check-input:checked {
+  background-color: lightgray!important;
+  border-color: lightgray!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+	#wrapper-navbar .container {
+		max-width: 100%!important;
+		display: block!important;
+	}
+}
+
+#wrapper-navbar>nav>div.container {
+    text-align: center;
+}
