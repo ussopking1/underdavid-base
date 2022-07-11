@@ -120,13 +120,13 @@ function understrap_add_site_child_info() {
 	if(is_user_logged_in()) 
 	{
 ?>
-<div class="wrap"><p>Site based on Understrap child theme UnderDavid &nbsp; ⁄ &nbsp; Developed by <a rel="nofollow" href=<?php echo 'https://davidstockdalescrapcode.co.uk/' ?>>David Stockdale</a> &nbsp; ⁄ &nbsp; Copyright ©&nbsp;<?php echo date("Y"); ?> &nbsp; ⁄ &nbsp; <a rel="nofollow" href=<?php echo get_site_url().'/wp-login.php?action=logout&amp;_wpnonce=5969d1c9bc' ?>>Log out</a></p></div>
+<div class="wrap"><p>Site commissioned from RCVDA &nbsp; ⁄ &nbsp; Developed by <a rel="nofollow" href=<?php echo 'https://davidstockdalescrapcode.co.uk/' ?>>David Stockdale</a> &nbsp; ⁄ &nbsp; Copyright ©&nbsp;<?php echo date("Y"); ?> &nbsp; ⁄ &nbsp; <a rel="nofollow" href=<?php echo get_site_url().'/wp-login.php?action=logout&amp;_wpnonce=5969d1c9bc' ?>>Log out</a></p></div>
 <?php
 	} 
 	else 
 	{
 ?>
-<div class="wrap"><p>Site based on Understrap child theme UnderDavid &nbsp; ⁄ &nbsp; Developed by <a rel="nofollow" href=<?php echo 'https://davidstockdalescrapcode.co.uk/' ?>>David Stockdale</a> &nbsp; ⁄ &nbsp; Copyright ©&nbsp;<?php echo date("Y"); ?> &nbsp; ⁄ &nbsp; <a rel="nofollow" href=<?php echo get_site_url().'/wp-login.php' ?>>Log in</a></p></div>
+<div class="wrap"><p>Site commissioned from RCVDA &nbsp; ⁄ &nbsp; Developed by <a rel="nofollow" href=<?php echo 'https://davidstockdalescrapcode.co.uk/' ?>>David Stockdale</a> &nbsp; ⁄ &nbsp; Copyright ©&nbsp;<?php echo date("Y"); ?> &nbsp; ⁄ &nbsp; <a rel="nofollow" href=<?php echo get_site_url().'/wp-login.php' ?>>Log in</a></p></div>
 <?php
 	}
 }
@@ -301,7 +301,7 @@ add_filter( 'widget_text', 'do_shortcode');
 add_post_type_support( 'page', 'excerpt' );
 
 /**
- * Adds custom Gutenberg Image Block Style "Squared (Small)" (David Stockdale).
+ * Adds custom Image Block Style "Squared (Small)" (David Stockdale).
  */
 add_action('init', function() {
 	$height_and_width = '9.5em';
@@ -317,7 +317,7 @@ add_action('init', function() {
 });
 
 /**
- * Adds custom Gutenberg Image Block Style "Squared (Medium)" (David Stockdale).
+ * Adds custom Image Block Style "Squared (Medium)" (David Stockdale).
  */
 add_action('init', function() {
 	$height_and_width = '15em';
@@ -333,7 +333,7 @@ add_action('init', function() {
 });
 
 /**
- * Adds custom Gutenberg Image Block Style "Squared (Large)" (David Stockdale).
+ * Adds custom Image Block Style "Squared (Large)" (David Stockdale).
  */
 add_action('init', function() {
 	$height_and_width = '35em';
@@ -349,7 +349,7 @@ add_action('init', function() {
 });
 
 /**
- * Adds custom Gutenberg Image Block Style "Squared (Max)" (David Stockdale).
+ * Adds custom Image Block Style "Squared (Max)" (David Stockdale).
  */
 add_action('init', function() {
 	$height_and_width = '80em';
@@ -365,7 +365,7 @@ add_action('init', function() {
 });
 
 /**
- * Adds custom Gutenberg Image Block Style "Circle (Small)" (David Stockdale).
+ * Adds custom Image Block Style "Circle (Small)" (David Stockdale).
  */
 add_action('init', function() {
 	$height_and_width = '9.5em';
@@ -386,7 +386,7 @@ add_action('init', function() {
 });
 
 /**
- * Adds custom Gutenberg Image Block Style "Circle (Medium)" (David Stockdale).
+ * Adds custom Image Block Style "Circle (Medium)" (David Stockdale).
  */
 add_action('init', function() {
 	$height_and_width = '15em';
@@ -407,7 +407,7 @@ add_action('init', function() {
 });
 
 /**
- * Adds custom Gutenberg Image Block Style "Circle (Large)" (David Stockdale).
+ * Adds custom Image Block Style "Circle (Large)" (David Stockdale).
  */
 add_action('init', function() {
 	$height_and_width = '35em';
@@ -428,7 +428,7 @@ add_action('init', function() {
 });
 
 /**
- * Adds custom Gutenberg Image Block Style "Circle (Max)" (David Stockdale).
+ * Adds custom Image Block Style "Circle (Max)" (David Stockdale).
  */
 add_action('init', function() {
 	$height_and_width = '80em';
@@ -449,14 +449,14 @@ add_action('init', function() {
 });
 
 /**
- * ADD Tags to Pages - ADDED BY PETER - see https://www.sitepoint.com/wordpress-pages-use-tags/
+ * Adds Tags to Pages.
  */
 function tags_support_all() {
 	register_taxonomy_for_object_type('post_tag', 'page');
 }
 
 /**
- * ensure all tags are included in queries
+ * Ensure all tags are included in queries.
  */
 function tags_support_query($wp_query) {
 	if ($wp_query->get('tag')) $wp_query->set('post_type', 'any');
