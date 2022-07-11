@@ -22,7 +22,7 @@ defined( 'ABSPATH' ) || exit;
 			<?php echo get_the_post_thumbnail( $post->ID, 'full' ); ?>
 			
 			<div id="innerdiv1" style="z-index: 2; position: absolute; text-align: left; color: white;">
-				<img src="https://www.boroculture.org.uk/wp-content/uploads/2021/05/cropped-favicon.png" 
+				<img src="https://davidstockdalescrapcode.co.uk/wp-content/uploads/2020/09/cropped-D-Logo.jpg" 
 					 alt="" style="" class="feature-logo"/>
 				
 			</div>

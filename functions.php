@@ -120,13 +120,13 @@ function understrap_add_site_child_info() {
 	if(is_user_logged_in()) 
 	{
 ?>
-<div class="wrap"><p>Site commissioned from RCVDA &nbsp; ⁄ &nbsp; Developed by <a rel="nofollow" href=<?php echo 'https://davidstockdalescrapcode.co.uk/' ?>>David Stockdale</a> &nbsp; ⁄ &nbsp; Copyright ©&nbsp;<?php echo date("Y"); ?> &nbsp; ⁄ &nbsp; <a rel="nofollow" href=<?php echo get_site_url().'/wp-login.php?action=logout&amp;_wpnonce=5969d1c9bc' ?>>Log out</a></p></div>
+<div class="wrap"><p>Site based on Understrap child theme UnderDavid &nbsp; ⁄ &nbsp; Developed by <a rel="nofollow" href=<?php echo 'https://davidstockdalescrapcode.co.uk/' ?>>David Stockdale</a> &nbsp; ⁄ &nbsp; Copyright ©&nbsp;<?php echo date("Y"); ?> &nbsp; ⁄ &nbsp; <a rel="nofollow" href=<?php echo get_site_url().'/wp-login.php?action=logout&amp;_wpnonce=5969d1c9bc' ?>>Log out</a></p></div>
 <?php
 	} 
 	else 
 	{
 ?>
-<div class="wrap"><p>Site commissioned from RCVDA &nbsp; ⁄ &nbsp; Developed by <a rel="nofollow" href=<?php echo 'https://davidstockdalescrapcode.co.uk/' ?>>David Stockdale</a> &nbsp; ⁄ &nbsp; Copyright ©&nbsp;<?php echo date("Y"); ?> &nbsp; ⁄ &nbsp; <a rel="nofollow" href=<?php echo get_site_url().'/wp-login.php' ?>>Log in</a></p></div>
+<div class="wrap"><p>Site based on Understrap child theme UnderDavid &nbsp; ⁄ &nbsp; Developed by <a rel="nofollow" href=<?php echo 'https://davidstockdalescrapcode.co.uk/' ?>>David Stockdale</a> &nbsp; ⁄ &nbsp; Copyright ©&nbsp;<?php echo date("Y"); ?> &nbsp; ⁄ &nbsp; <a rel="nofollow" href=<?php echo get_site_url().'/wp-login.php' ?>>Log in</a></p></div>
 <?php
 	}
 }
@@ -1011,4 +1011,15 @@ function david_streamer_shortcode($atts) {
 	}
 
 	 return $result;
+}
+
+
+/**
+ * Prevents any image with the class "attatchment" from loading.
+ * (Fixes Jetpack Lazy Loading leaving embedded post images forever unloaded).
+ */
+add_filter( 'jetpack_lazy_images_blocked_classes', 'mysite_customize_lazy_images' );
+function mysite_customize_lazy_images( $blocked_classes ) {
+    $blocked_classes[] = 'embeddy';
+    return $blocked_classes;
 }

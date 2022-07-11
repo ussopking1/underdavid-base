@@ -84,7 +84,7 @@
 			?>
 			<div class="wp-embed-featured-image rectangular">
 				<a href="<?php the_permalink(); ?>" target="_top">
-					<?php echo wp_get_attachment_image( $thumbnail_id, $image_size ); ?>
+					<?php echo wp_get_attachment_image( $thumbnail_id, $image_size, "", ["class" => "embeddy"]  ); ?>
 				</a>
 			</div>
 		<?php endif; ?>
@@ -98,7 +98,7 @@
 		<?php if ( $thumbnail_id && 'square' === $shape ) : ?>
 			<div class="wp-embed-featured-image square">
 				<a href="<?php the_permalink(); ?>" target="_top">
-					<?php echo wp_get_attachment_image( $thumbnail_id, $image_size ); ?>
+					<?php echo wp_get_attachment_image( $thumbnail_id, $image_size, "", ["class" => "embeddy"] ); ?>
 				</a>
 			</div>
 		<?php endif; ?>
