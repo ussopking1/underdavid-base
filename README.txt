@@ -48,5 +48,7 @@ Includes Local Fonts:
 
 Supports Plugins:
 -Co-Authors Plus ()
--
+-AWS for WordPress
+-WP-ShowHide
+-Jetpack?
 -
